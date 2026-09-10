@@ -8,7 +8,7 @@ LABEL maintainer="Fabian Wünderich <fabian@wuenderich.de>"
 LABEL documentation="https://github.com/fanonwue/docker-ntp"
 
 # install chrony
-RUN apk add --no-cache chrony tzdata
+RUN apk add --no-cache chrony-nts tzdata
 
 # script to configure/startup chrony (ntp)
 COPY assets/startup.sh /opt/startup.sh
